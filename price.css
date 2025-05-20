@@ -1,0 +1,66 @@
+.pricing-section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.pricing-cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.pricing-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  flex: 1 1 300px;
+  background: #fafafa;
+}
+
+.pricing-card h3 {
+  margin-top: 0;
+  color: #2a9d8f;
+}
+
+.price {
+  font-size: 1.5rem;
+  color: #e76f51;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.comparison-table th, .comparison-table td {
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.comparison-table th {
+  background-color: #264653;
+  color: white;
+}
+
+.addons-list {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+a {
+  color: #2a9d8f;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

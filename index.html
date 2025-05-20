@@ -1,156 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechNova Digital | E-commerce Web Development Agency</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"> 
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
-            <div class="logo">
-                <h1>Tech<span>Nova</span> Digital</h1>
-            </div>
-            <nav class="nav">
-                <ul class="nav-links">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#process">Process</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </nav>
-        </div>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Technova offers SEO-optimized web design, branding, and Instagram sales funnels for Nigerian businesses. Get a free quote today!"
+    />
+    <meta
+      name="keywords"
+      content="web design Nigeria, SEO, branding, ecommerce, Instagram sales funnel, Technova"
+    />
+    <meta name="author" content="Technova Agency" />
+    <title>Technova | E-commerce Web Development Agency</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+     <!-- Header Section -->
+  <header>
+  <div class="container nav-container">
+    <div class="logo">
+      <div class="logo-icon"></div>
+      <span>TechNova</span>
+    </div>
+
+    <!-- Hamburger icon for mobile -->
+    <div class="menu-toggle" id="menuToggle">
+      ☰
+    </div>
+
+    <!-- Navigation and button wrapper -->
+   
+      <nav>
+        <ul>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="btn btn-blk">Let's Talk</a>
+   
+  </div>
+</header>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero">
+    <section class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Building <span>E-commerce</span> That Drives Business Growth</h1>
-                <p class="hero-subtitle">We design and develop custom e-commerce solutions that help your business scale, engage customers, and maximize your online revenue.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get Free Consultation</a>
-                    <a href="#portfolio" class="btn btn-outline">View Our Work</a>
-                </div>
-            </div>
+           <h1>We design & build <br><span class="highlight" id="changingText">websites</span><br>that transform your business!</h1>
+            <p>From design to development, we help businesses launch stores that engage, convert, and scale seamlessly blending creativity with technology.</p>
+            <a href="#" class="btn">Get free consultation</a>
         </div>
+        <div class="dots-decoration"></div>
     </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
+    
+    <!-- Our Services -->
+    <section class="what-we-do">
         <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <p class="section-subtitle">We offer comprehensive e-commerce development solutions tailored to your business needs</p>
+            <h2>Our Services</h2>
+            <p>We offer comprehensive e-commerce development solutions tailored to your business needs</p>
             
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-shopping-cart"></i>
+            <div class="detailed-services">
+               
+                <div class="detailed-service">
+                    <div class="detailed-service-icon">
+                        <i class="fas fa-code" style="color: white;"></i>
                     </div>
-                    <h3 class="service-title">E-commerce Development</h3>
-                    <p class="service-description">Custom online stores built on leading platforms with seamless payment integration and inventory management.</p>
-                    <div class="service-price">$5,000 <span>/ Starting</span></div>
-                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                    <h3>Web Design & Development</h3>
+                    <p>Modern web design and building for-to-file pixel-perfect design. With high development standards, we create optimized, lightning-fast, custom web experiences that support rich media types, impressive animations and interconnect with many apps from API.</p>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
+                <div class="detailed-service">
+                    <div class="detailed-service-icon">
+                        <i class="fab fa-wordpress" style="color: white;"></i>
                     </div>
-                    <h3 class="service-title">Mobile Commerce</h3>
-                    <p class="service-description">Responsive designs and dedicated mobile apps for optimal shopping experience on smartphones and tablets.</p>
-                    <div class="service-price">$3,500 <span>/ Starting</span></div>
-                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                    <h3>WordPress Development</h3>
+                    <p>We specialize in WordPress development services like theme customization, plugin development, website migration, speed optimization, and more. Our custom WordPress sites are built for security, flexibility all provided by developers.</p>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-search-dollar"></i>
+                <div class="detailed-service">
+                    <div class="detailed-service-icon">
+                        <i class="fas fa-server" style="color: white;"></i>
                     </div>
-                    <h3 class="service-title">SEO & Marketing</h3>
-                    <p class="service-description">Optimize your store for search engines and implement effective marketing strategies to drive traffic.</p>
-                    <div class="service-price">$1,800 <span>/ Monthly</span></div>
-                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                    <h3>Software Development</h3>
+                    <p>We help overcome business problems like feature development, system integration, product management and architecture with custom software solutions. Our software development expertise provides higher quality, lower costs and on-time service.</p>
                 </div>
+               
             </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+    <section class="portfolio">
         <div class="container">
-            <h2 class="section-title">Our Portfolio</h2>
-            <p class="section-subtitle">Take a look at some of our recent e-commerce projects</p>
-            
+            <h2>Our Portfolio</h2>
+             <p>Take a look at some of our recent projects</p>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
-                    <img src="assets/project1.png" alt="Fashion E-commerce" class="portfolio-img">
+                    <img src="/api/placeholder/400/320" alt="Portfolio item">
                     <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">Luxe Boutique</h3>
-                        <p class="portfolio-category">Fashion E-commerce</p>
-                        <a href="#" class="btn btn-primary">View Details</a>
+                        <h3>Pollimasters Restaurants</h3>
+                        <p>Food Delivery App & Website</p>
                     </div>
                 </div>
-                
                 <div class="portfolio-item">
-                    <img src="/api/placeholder/450/300" alt="Electronics Store" class="portfolio-img">
+                    <img src="/api/placeholder/400/320" alt="Portfolio item">
                     <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">TechHub</h3>
-                        <p class="portfolio-category">Electronics Store</p>
-                        <a href="#" class="btn btn-primary">View Details</a>
+                        <h3>Buy EGI Inc</h3>
+                        <p>E-commerce and Product Management</p>
                     </div>
                 </div>
-                
                 <div class="portfolio-item">
-                    <img src="/api/placeholder/450/300" alt="Food Delivery" class="portfolio-img">
+                    <img src="/api/placeholder/400/320" alt="Portfolio item">
                     <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">Fresh Eats</h3>
-                        <p class="portfolio-category">Food Delivery</p>
-                        <a href="#" class="btn btn-primary">View Details</a>
+                        <h3>West Africa Health Exams Board</h3>
+                        <p>Online Learning Management System</p>
                     </div>
                 </div>
+                <div class="portfolio-item">
+                    <img src="/api/placeholder/400/320" alt="Portfolio item">
+                    <div class="portfolio-overlay">
+                        <h3>Pizza Jungle</h3>
+                        <p>Food Delivery Website & Mobile App</p>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="#" class="btn">See all projects</a>
             </div>
         </div>
     </section>
 
     <!-- Process Section -->
-    <section id="process" class="process section">
+    <section class="process">
         <div class="container">
-            <h2 class="section-title">Our Process</h2>
-            <p class="section-subtitle">We follow a simple yet effective 3-step process to ensure project success</p>
-            
-            <div class="process-steps">
-                <div class="process-step">
-                    <div class="step-number">1</div>
-                    <h3 class="step-title">Discovery & Planning</h3>
-                    <p class="step-description">We start by understanding your business goals, target audience, and requirements to create a strategic plan.</p>
+            <h2>Our Process</h2>
+            <p>We follow a simple yet effective 3-step process to ensure project success</p>
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-icon">
+                        <i class="fas fa-eye" style="color: #ec77ab;"></i>
+                    </div>
+                    <h3>We understand you</h3>
+                    <p>We know that fully-fledged, successful communication is key to understanding your unique business goals. Before starting a project, we define a strategy that aligns with your vision.</p>
                 </div>
-                
-                <div class="process-step">
-                    <div class="step-number">2</div>
-                    <h3 class="step-title">Design & Development</h3>
-                    <p class="step-description">Our designers and developers work together to create a visually appealing and fully functional e-commerce website.</p>
+                <div class="process-card">
+                    <div class="process-icon">
+                        <i class="fas fa-tasks" style="color: #ec77ab;"></i>
+                    </div>
+                    <h3>We get to work</h3>
+                    <p>Our team of designers, developers & writers create practical solutions to your business challenges. We use the right technologies, beautiful visual styles and user-friendly interfaces that matter.</p>
                 </div>
-                
-                <div class="process-step">
-                    <div class="step-number">3</div>
-                    <h3 class="step-title">Testing & Launch</h3>
-                    <p class="step-description">We thoroughly test your website for quality and performance before launching it to the world.</p>
+                <div class="process-card">
+                    <div class="process-icon">
+                        <i class="fas fa-chart-line" style="color: #ec77ab;"></i>
+                    </div>
+                    <h3>You get results</h3>
+                    <p>A clear, solid, & appealing visual identity coupled with a good user experience is what drives client interest in your product. We work obsessively on increasing your goals.</p>
                 </div>
             </div>
         </div>
     </section>
+    <section class="stats">
+        <div class="container">
+            <h2>Our track record</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">8+ years</div>
+                    <div class="stat-description">Of creative high-performing web development experience. The foundation of our web design and development expertise.</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">14+ industries</div>
+                    <div class="stat-description">With a diverse portfolio covering 14+ industries, we bring a wealth of cross-industry expertise to our clients.</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100+ projects</div>
+                    <div class="stat-description">Design and development experience consistently solved clients while earning the trust of brands big and small.</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3+ million</div>
+                    <div class="stat-description">That's how many users our sites have been visited by each year. We've helped organizations bring more traffic and applications to their sites.</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">80% retention</div>
+                    <div class="stat-description">Most of our clients choose to continue working with us after the initial project is complete, showcasing the trust and satisfaction that they have.</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">8+ languages</div>
+                    <div class="stat-description">Fluency in JavaScript, PHP, Python, Java, React, and numerous back-end, front-end languages, enabling us to handle any development challenges.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    
+      <!-- Tech Stack Section -->
+    <section class="clients">
+        <div class="container">
+            <div class="badge">Our Tech Stack</div>
+            
+          <div class="clients-logo-grid">
+    <!-- First Set -->
+            <div class="client-logo"><img src="assets/css.png" alt="Sundry Logo"></div>
+                <div class="client-logo"><img src="assets/html.png" alt="StandardBank Logo"></div>
+                <div class="client-logo"><img src="assets/js.png" alt="CarsInc Logo"></div>
+                <div class="client-logo"><img src="assets/node.png" alt="FLS Media Logo"></div>
+                <div class="client-logo"><img src="assest/reactlogo-removebg-preview.png" alt="Caralabs Logo"></div>
+                <div class="client-logo"><img src="assets/shopifylogo-removebg-preview.png" alt="T-Mobile Logo"></div>
+                <div class="client-logo"><img src="assets/woologo-removebg-preview.png" alt="Relumins Logo"></div>
+                <div class="client-logo"><img src="assets/wordpress-removebg-preview.png" alt="Sundry Logo">
+                </div>
+</div>
+            
+        </div>
+    </section>
+  
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section">
@@ -195,63 +270,24 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Ready to start your e-commerce journey? Contact us for a free consultation</p>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3 class="contact-title">Let's Talk</h3>
-                    <p class="contact-subtitle">Fill out the form and we'll get back to you within 24 hours.</p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <h4>Our Location</h4>
-                                <p>Lagos, Nigeria</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <div>
-                                <h4>Phone Number</h4>
-                                <p>(+234) 8135-377575</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <h4>Email Address</h4>
-                                <p>technovadigitalng@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <label class="form-label">Full Name</label>
-                            <input type="text" class="form-control" placeholder="Your Name">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="form-label">Email Address</label>
-                            <input type="email" class="form-control" placeholder="Your Email">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="form-label">Phone Number</label>
-                            <input type="tel" class="form-control" placeholder="Your Phone">
-                        </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Technova. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/tech_nova_digital/?hl=en"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="backToTop" class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
