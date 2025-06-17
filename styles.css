@@ -82,6 +82,7 @@ header.scrolled {
 
 .blurred {
   filter: blur(1px);
+  opacity: 0.3;
   transition: filter 0.3s ease;
 }
 
@@ -954,7 +955,7 @@ nav ul li a:hover::after {
   }
 
   .tech-grid {
-    gap: 3rem;
+    gap: 0rem;
   }
 
   .tech-logo img {
