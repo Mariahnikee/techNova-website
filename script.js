@@ -57,10 +57,17 @@ window.addEventListener("scroll", function () {
 });
 
 // Optional: Mobile menu toggle functionality
-document.getElementById("menuToggle").addEventListener("click", function () {
-  const nav = document.querySelector("nav");
-  nav.style.display = nav.style.display === "block" ? "none" : "block";
+const menuToggle = document.getElementById("menuToggle");
+const nav = document.querySelector("nav");
+const mainContent = document.getElementById("main-content");
+
+menuToggle.addEventListener("click", function () {
+  nav.classList.toggle("active");
+
+  // Toggle blur on main content
+  mainContent.classList.toggle("blurred");
 });
+
 
 //service care animation
 document.addEventListener("DOMContentLoaded", function () {

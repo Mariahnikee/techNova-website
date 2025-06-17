@@ -27,6 +27,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
   />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -34,12 +35,15 @@
     <header id="header">
         <div class="container nav-container">
             <div class="logo">
-                <div class="logo-icon"></div>
-                <span>TechNova</span>
+                <img
+                  class="pageui"
+                  src="assets/logomain.png"
+                  alt="Project Screenshot"
+                />
             </div>
             
             <!-- Hamburger icon for mobile -->
-            <div class="menu-toggle" id="menuToggle">☰</div>
+            <div class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></div>
             
             <!-- Navigation and button wrapper -->
             <nav>
@@ -50,12 +54,15 @@
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#careers">Careers</a></li>
+                     <!-- mobile only -->
+                    <li><a href="#contact" class="cta-button" id="mobile-btn">Let's Talk</a></li> <!-- mobile only -->
                 </ul>
             </nav>
-            <a href="#contact" class="cta-button">Let's Talk</a>
+
+            <a href="#contact" class="cta-button" id="menubutton">Let's Talk</a>
         </div>
     </header>
-
+<main id="main-content">
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
@@ -73,9 +80,10 @@
       </div>
     </section>
 
-    <!-- Services Section -->
+
+ <!-- Services Section -->
     <section class="services">
-      <spam class="semi-title">Our Services</spam>
+      <spam class="semi-title"><i class="fa-solid fa-minus"></i> Our Services</spam>
       <h2 class="section-title">What we do best</h2>
       <p>
         We offer comprehensive e-commerce & development solutions tailored to
@@ -84,32 +92,44 @@
 
       <div class="services-grid">
         <div class="service-card">
-          <div class="service-icon">🎨</div>
-          <h3>Web Design & Development</h3>
+          <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>E- Commerce Web Design</h3>
           <p>
-            We specialize in creating stunning, user-friendly websites that not
-            only look great but also deliver results. Our design-first approach
-            ensures maximum engagement and conversion rates.
+           We craft high-converting ecommerce websites that connect with your audience,and maximize your online sales potential.
           </p>
         </div>
         <div class="service-card">
-          <div class="service-icon">⚙️</div>
-          <h3>WordPress Development</h3>
+          <div class="service-icon"><i class="fa-solid fa-earth-americas"></i></div>
+          <h3>SEO</h3>
           <p>
-            We specialize in end-to-end WordPress solutions, from custom theme
-            development to plugin customization, ensuring your website stands
-            out with optimal performance.
+           Driving your business to Google's first pages is what we do best. Our rich SEO technique will shoot your websites to the top in few weeks!
+
           </p>
         </div>
         <div class="service-card">
-          <div class="service-icon">🛒</div>
+          <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
           <h3>Software Development</h3>
           <p>
-            We build scalable software solutions that adapt to your growing
-            business needs. Our expert team develops custom applications using
-            cutting-edge technologies and best practices.
+            We create custom websites perfectly matched to your business needs across every industry - investment platforms, social networks, corporate sites, logistics solutions, and educational portals.
           </p>
         </div>
+ <div class="service-card">
+          <div class="service-icon">
+             <img
+                  class="pageui"
+                  id="serviceimg"
+                  src="assets/phone2.svg"
+                  alt="Project Screenshot"
+                />
+            <!-- <i class="fa-solid fa-laptop-code"></i> -->
+          </div>
+          
+          <h3>Social-Media Management</h3>
+          <p>
+            We manage your social media, creating engaging content and growing your online presence. Let us help you connect with and build your audience.
+          </p>
+        </div>
+        
       </div>
     </section>
 
@@ -183,6 +203,7 @@
 
     <!-- Portfolio Section -->
     <section class="portfolio" id="portfolio">
+      <spam class="semi-title"><i class="fa-solid fa-minus"></i>Our Portfolio</spam>
       <h2 class="section-title">What we've done</h2>
       <p>Take a look at some of our recent projects</p>
 
@@ -274,7 +295,7 @@
               <div class="slide-track">
                 <img
                   class="pageui"
-                  src="assets/ui5.png"
+                  src="assets/crypto2.png"
                   alt="Project Screenshot"
                 />
               </div>
@@ -309,7 +330,7 @@
       </div>
 
       <div style="text-align: center; margin-top: 3rem">
-        <a href="#portfolio" class="cta-button">See All Projects</a>
+        <a href="#portfolio" class="cta-button">Request  Portfolio</a>
       </div>
     </section>
 
@@ -495,5 +516,6 @@
     </footer>
 
     <script src="script.js"></script>
+    </main>
   </body>
 </html>
