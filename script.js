@@ -1,76 +1,88 @@
- document.addEventListener('DOMContentLoaded', function() {
-  // Get the menu toggle button
-  const menuToggle = document.getElementById('menuToggle');
-  
-  // Add click event listener to toggle the menu
-  menuToggle.addEventListener('click', function() {
-    // Toggle the menu-active class on the nav-container
-    const navContainer = document.querySelector('.nav-container');
-    navContainer.classList.toggle('menu-active');
-  });
+// Toggle the menu-active class on the nav-container
+const words = [
+  "websites",
+  "SaaS tools",
+  "E-commerce stores",
+  "customized Software",
+];
+const textEl = document.getElementById("changingText");
+let index = 0;
+
+setInterval(() => {
+  index = (index + 1) % words.length;
+  textEl.style.opacity = 0;
+  setTimeout(() => {
+    textEl.textContent = words[index];
+    textEl.style.opacity = 1;
+  }, 400);
+}, 2500);
+
+// FAQ Toggle Function
+function toggleFaq(index) {
+  const answer = document.getElementById(`faq-${index}`);
+  const question = answer.previousElementSibling;
+  const icon = question.querySelector("span:last-child");
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+    icon.textContent = "+";
+  } else {
+    // Close all other FAQs
+    document.querySelectorAll(".faq-answer").forEach((faq) => {
+      faq.style.display = "none";
+    });
+    document
+      .querySelectorAll(".faq-question span:last-child")
+      .forEach((icon) => {
+        icon.textContent = "+";
+      });
+
+    // Open clicked FAQ
+    answer.style.display = "block";
+    icon.textContent = "−";
+  }
+}
+
+// Scroll effect for navigation
+window.addEventListener("scroll", function () {
+  const header = document.getElementById("header");
+  const scrollPosition = window.scrollY;
+
+  // Add 'scrolled' class when user scrolls more than 50px
+  if (scrollPosition > 50) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
 });
 
-        const words = ["websites", "SaaS tools", "E-commerce stores", "customized Software"];
-  const textEl = document.getElementById("changingText");
-  let index = 0;
+// Optional: Mobile menu toggle functionality
+document.getElementById("menuToggle").addEventListener("click", function () {
+  const nav = document.querySelector("nav");
+  nav.style.display = nav.style.display === "block" ? "none" : "block";
+});
 
-  setInterval(() => {
-    index = (index + 1) % words.length;
-    textEl.style.opacity = 0;
-    setTimeout(() => {
-      textEl.textContent = words[index];
-      textEl.style.opacity = 1;
-    }, 400);
-  }, 2500);
+//service care animation
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".service-card");
+  const titles = document.querySelectorAll(
+    ".section-title, .semi-title, .services p"
+  );
 
-        // Simple JavaScript for interactive elements
-        document.addEventListener('DOMContentLoaded', function() {
-            // Add hover effects to service cards
-            const serviceCards = document.querySelectorAll('.service-card');
-            serviceCards.forEach(card => {
-                card.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-10px)';
-                    this.style.boxShadow = '0 10px 30px rgba(0,0,0,0.2)';
-                });
-                
-                card.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0)';
-                    this.style.boxShadow = 'none';
-                });
-            });
-            
-            // Play button interaction
-            const playButton = document.querySelector('.play-button');
-            if (playButton) {
-                playButton.addEventListener('click', function() {
-                    alert('Video would play here in a real implementation');
-                });
-                
-                playButton.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translate(-50%, -50%) scale(1.1)';
-                });
-                
-                playButton.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translate(-50%, -50%) scale(1)';
-                });
-            }
-            
-            // Smooth scroll for navigation
-            const navLinks = document.querySelectorAll('nav a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    // Would implement smooth scroll to sections in a real implementation
-                });
-            });
-        });
-
-        // Header scroll effect
-const header = document.querySelector('header');
-window.addEventListener('scroll', function () {
-    if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.5,
     }
+  );
+
+  cards.forEach((card) => observer.observe(card));
+  titles.forEach((el) => observer.observe(el));
 });
