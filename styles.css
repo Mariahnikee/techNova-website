@@ -177,6 +177,19 @@ nav ul li a:hover::after {
   margin-bottom: 20px;
 }
 
+.hero-content p {
+  color: #ececec;
+  margin-bottom: 50px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  max-width: 600px; /* Control width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .highlight {
   font-family: "Playfair Display", serif;
   color: #ffffff !important;
@@ -344,6 +357,14 @@ nav ul li a:hover::after {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.tech-stack p {
+ color: rgba(255, 255, 255, 0.7);
+ margin-bottom: 2rem;
+ max-width: 600px;
+ margin-left: auto;
+ margin-right: auto;
 }
 
 /* tech stack animation */
