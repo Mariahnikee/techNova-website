@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet" />
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <!-- Header Section -->
+    <header id="header">
+        <div class="container nav-container">
+            <div class="logo">
+              <a href="index.html"> 
+              <img
+                  class="pageui"
+                  src="assets/logomain.png"
+                  alt="Project Screenshot"
+                />
+                </a>
+            </div>
+            
+            <!-- Hamburger icon for mobile -->
+            <div class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></div>
+            
+            <!-- Navigation and button wrapper -->
+            <nav>
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                     <!-- mobile only -->
+                    <li><a href="contact.html" class="cta-button" id="mobile-btn">Contact Us</a></li> <!-- mobile only -->
+                </ul>
+            </nav>
+
+            <a href="contact.html" class="cta-button" id="menubutton">Contact Us</a>
+        </div>
+    </header>
+<!-- contact us form -->
+ <section id="contact" class="contact-section">
+
+
+  <h2 class="section-title">Contact Us</h2>
+  <form action="https://formspree.io/f/xjkroryr" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit" class="cta-button">Send Message</button>
+    <input type="hidden" name="_redirect" value="https://technovadigital.onrender.com/thank-you.html">
+  </form>
+</section>
+
+
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section" class="newsletter" >
+          <h3>
+            Subscribe to our newsletter to <br />stay in touch with the latest.
+          </h3>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit"><i class="fas fa-envelope"></i></button>
+          </form>
+          <div class="social-icons">
+        <p>follow us here:</p>
+        <a href="#"><i class="fab fa-dribbble"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-behance"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-discord"></i></a>
+           </div>
+
+            <div class="footer-section">
+         <p class="sub-heading">Contact Us</p>
+          <ul>
+            <li>Email: technovadigitalng@gmail.com</li>
+            <li>Phone: +234 8135377575</li>
+          </ul>
+        </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">Web Design & Development</a></li>
+            <li><a href="#">WordPress Development</a></li>
+            <li><a href="#">Software Development</a></li>
+            <li><a href="#">E-commerce Solutions</a></li>
+            <li><a href="#">Mobile App Development</a></li>
+            <li><a href="#">SEO & Digital Marketing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 TechWeave. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
