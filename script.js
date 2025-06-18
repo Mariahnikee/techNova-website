@@ -1,9 +1,9 @@
 // Toggle the menu-active class on the nav-container
 const words = [
-  "websites",
-  "SaaS tools",
-  "E-commerce stores",
-  "customized Software",
+  "Websites",
+  "SaaS Tools",
+  "E-commerce Stores",
+  "Customized Software",
 ];
 const textEl = document.getElementById("changingText");
 let index = 0;
