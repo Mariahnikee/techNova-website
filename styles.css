@@ -173,19 +173,36 @@ nav ul li a:hover::after {
   bottom: 20px;
   left: 20px;
   z-index: 1000;
-  background-color: #25D366;
+  /* background-color: #25D366; */
   padding: 10px;
-  border-radius: 50%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); */
   transition: transform 0.3s ease;
 }
 .whatsapp-float:hover {
   transform: scale(1.1);
 }
 .whatsapp-float img {
-  width: 40px;
-  height: 40px;
+  width: 72px;
+  height: 76px;
 }
+
+@keyframes slideFromBottom {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slideFromBottom 1s ease-out;
+  animation-fill-mode: both;
+}
+
 
 /* Hero Section */
 .hero {
@@ -834,6 +851,7 @@ nav ul li a:hover::after {
   outline: none;
   font-size: 16px;
   background: transparent;
+  color: #ffffff;
 }
 
 
