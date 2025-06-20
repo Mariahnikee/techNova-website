@@ -3,7 +3,8 @@ const words = [
   "Websites",
   "SaaS Tools",
   "E-commerce Stores",
-  "Application",
+  "Landing Page",
+  "Mobile Apps",
   "Customized Software",
 ];
 const textEl = document.getElementById("changingText");
